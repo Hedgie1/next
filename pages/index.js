@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar'
 import Memes from '@/components/Memes'
 import fs from 'fs'
 import path from 'path'
-export default function Home({ memes }) {
+export default function Home({ /*memes*/ }) {
   return (
     <>
       <Head>
@@ -20,16 +20,10 @@ export default function Home({ memes }) {
         </h1>
       </main>
 
-      <Memes memes={memes} />
+
 
     </>
   )
 }
-export function getServerSideProps() {
-  let memes = fs.readdirSync(path.join(process.cwd(), "public/memes"))
-  return {
-    props: {
-      memes: memes
-    },
-  }
-}
+
+//<Memes memes={memes} />
