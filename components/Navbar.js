@@ -5,7 +5,7 @@ export default function Navbar() {
     return (
         <>
             <nav className="flex items-center justify-between bg-gray-800 p-5">
-                <Link href="/"><a className="font-semibold align-middle text-white text-xl">Hedgie's Web</a></Link>
+                <Link href="/" className="font-semibold align-middle text-white text-xl">Hedgie's Web</Link>
                 <div className="flex justify-center">
                     <div className="inline-grid grid-cols-3 gap-10">
 
