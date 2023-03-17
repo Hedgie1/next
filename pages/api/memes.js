@@ -1,7 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import Redis from 'ioredis'
 let redis = new Redis({
-  host: "",
+  host: "host.docker.internal",
   port: 6379,
   password: "",
 })
